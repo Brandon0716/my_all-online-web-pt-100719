@@ -7,4 +7,10 @@ def my_all?(collection)
     the_choosen << yield(collection[b])
     b += 1 
   end
+  
+    if the_choosen.include?(false)
+    false
+  else
+    true
+  end
 end
